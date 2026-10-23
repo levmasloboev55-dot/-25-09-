@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="История и обзор языка программирования Python">
-    <title>История языка Python</title>
+    <meta name="description" content="История и обзор языка программирования C++">
+    <title>История языка C++</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>История и обзор языка программирования Python</h1>
-    <p><small>Автор: Студент группы УБ25-09Б Маслобоев Лев | <time datetime="2026-10-22">22 октября 2026 г.</time></small></p>
+    <h1>История и обзор языка программирования C++</h1>
+    <p><small>Автор: Студент группы УБ25-09Б Маслобоев Лев | <time datetime="2026-10-23">23 октября 2026 г.</time></small></p>
 </header>
 
 <nav>
@@ -28,13 +28,13 @@
     <section id="history">
         <h2>История создания</h2>
         <figure class="float-left">
-            <img src="images/guido.jpg" alt="Гвидо ван Россум" width="200">
-            <figcaption>Гвидо ван Россум, создатель Python</figcaption>
+            <img src="images/guido.png" alt="Бьёрн Страуструп" width="200">
+            <figcaption>Бьёрн Страуструп, создатель C++</figcaption>
         </figure>
-        <p>Язык программирования <strong>Python</strong> был задуман в <em>конце 1980-х годов</em> нидерландским программистом <abbr title="Guido van Rossum">Гвидо ван Россумом</abbr> в Центре математики и информатики (CWI) в Амстердаме. Он хотел создать язык, который был бы проще в использовании, чем C, но мощнее, чем shell-скрипты.</p>
-        <p>Первая публичная версия <mark>Python 0.9.0</mark> была выпущена в феврале <time>1991 года</time>. Название языка не имеет отношения к змеям: оно произошло от любимого комедийного шоу Гвидо — <a href="https://en.wikipedia.org/wiki/Monty_Python" target="_blank" rel="noopener">«Летающий цирк Монти Пайтона»</a>.</p>
+        <p>Язык программирования <strong>C++</strong> был создан <em>в 1979 году</em> датским учёным <abbr title="Bjarne Stroustrup">Бьёрном Страуструпом</abbr> в лабораториях компании Bell Labs. Изначально язык назывался <mark>«C с классами»</mark> (C with Classes) и представлял собой расширение языка C возможностями объектно-ориентированного программирования.</p>
+        <p>В <time>1983 году</time> язык был переименован в C++ (оператор инкремента в C символизирует развитие языка). Первая коммерческая реализация появилась в <time datetime="1985-10-14">октябре 1985 года</time> вместе с публикацией книги <a href="https://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language" target="_blank" rel="noopener">«The C++ Programming Language»</a>.</p>
         <br>
-        <p>В 2000 году вышел Python 2.0, а в 2008 году — Python 3.0, который внес обратно несовместимые изменения для улучшения архитектуры языка.</p>
+        <p>Стандартизация языка началась в 1989 году. Первый официальный стандарт <strong>ISO/IEC 14882:1998</strong> был принят в 1998 году. С тех пор вышли стандарты C++03, C++11, C++14, C++17, C++20 и <a href="https://isocpp.org/std/the-standard" target="_blank" rel="noopener">C++23</a>, каждый из которых значительно расширял возможности языка.</p>
     </section>
 
     <hr>
@@ -42,53 +42,57 @@
     <section id="overview">
         <h2>Краткий обзор языка</h2>
         <figure class="float-right">
-            <img src="images/python-logo.png" alt="Логотип Python" width="180">
-            <figcaption>Официальный логотип Python</figcaption>
+            <img src="images/python-logo.png" alt="Логотип C++" width="180">
+            <figcaption>Официальный логотип C++</figcaption>
         </figure>
-        <p>Python — это <strong>высокоуровневый</strong> язык программирования общего назначения с акцентом на производительность разработчика и читаемость кода. Он поддерживает несколько парадигм программирования.</p>
+        <p>C++ — это <strong>компилируемый</strong> статически типизированный язык программирования общего назначения, поддерживающий несколько парадигм: процедурную, объектно-ориентированную и обобщённую (шаблоны). Язык широко используется в системном программировании, разработке игр и высокопроизводительных приложений.</p>
         
         <table>
             <thead>
                 <tr>
                     <th>Характеристика</th>
-                    <th>Описание в Python</th>
+                    <th>Описание в C++</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Типизация</td>
-                    <td>Динамическая, сильная</td>
+                    <td>Статическая, строгая</td>
                 </tr>
                 <tr>
                     <td>Парадигмы</td>
-                    <td>Объектно-ориентированная, процедурная, функциональная</td>
+                    <td>Процедурная, ООП, обобщённое программирование, функциональная</td>
                 </tr>
                 <tr>
                     <td>Управление памятью</td>
-                    <td>Автоматическое (сборка мусора)</td>
+                    <td>Ручное (new/delete) и автоматическое (RAII, умные указатели)</td>
+                </tr>
+                <tr>
+                    <td>Компиляция</td>
+                    <td>AOT (ahead-of-time), в машинный код</td>
                 </tr>
             </tbody>
         </table>
 
         <h3>Как начать работу (инструкция):</h3>
         <ol>
-            <li>Скачайте установщик с официального сайта <a href="https://www.python.org/" target="_blank">python.org</a>.</li>
-            <li>Запустите установщик и отметьте галочку "Add Python to PATH".</li>
-            <li>Нажмите "Install Now" и дождитесь завершения.</li>
+            <li>Установите компилятор: <a href="https://gcc.gnu.org/" target="_blank">GCC</a> (Linux/macOS) или <a href="https://visualstudio.microsoft.com/" target="_blank">MSVC</a> (Windows).</li>
+            <li>Установите среду разработки: Visual Studio, CLion или VS Code.</li>
+            <li>Напишите первую программу в файле <code>main.cpp</code> и скомпилируйте командой <code>g++ main.cpp -o main</code>.</li>
         </ol>
 
         <h3>Ключевые особенности:</h3>
         <ul class="standard-list">
-            <li>Читаемый и лаконичный синтаксис.</li>
-            <li>Огромная стандартная библиотека.</li>
-            <li>Кроссплатформенность (Windows, macOS, Linux).</li>
+            <li>Высокая производительность и контроль над ресурсами.</li>
+            <li>Поддержка низкоуровневого программирования (указатели, работа с памятью).</li>
+            <li>Богатая стандартная библиотека (STL): контейнеры, алгоритмы, итераторы.</li>
         </ul>
 
         <h3>Области применения:</h3>
         <ul class="image-list">
-            <li>Веб-разработка (Django, Flask)</li>
-            <li>Наука о данных и машинное обучение (Pandas, TensorFlow)</li>
-            <li>Автоматизация и написание скриптов</li>
+            <li>Разработка игр и игровых движков (Unreal Engine)</li>
+            <li>Системное программирование (ОС, драйверы, браузеры)</li>
+            <li>Финансовые системы и высоконагруженные серверы</li>
         </ul>
     </section>
 
@@ -100,19 +104,32 @@
             <img src="images/code-bg.png" alt="Абстракция кода" width="300">
             <figcaption>Рис. 3. Визуализация структуры кода</figcaption>
         </figure>
-        <p>Ниже приведен пример простого объектно-ориентированного кода на Python с ручной подсветкой синтаксиса (в стиле темы <em>Monokai</em>):</p>
+        <p>Ниже приведён пример простого объектно-ориентированного кода на C++ с ручной подсветкой синтаксиса (в стиле темы <em>Monokai</em>):</p>
         
-        <pre><code><span class="keyword">class</span> <span class="class-name">Greeter</span>:
-    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="variable">self</span>, <span class="variable">name</span>):
-        <span class="variable">self</span>.<span class="variable">name</span> = <span class="variable">name</span>
+        <pre><code><span class="preprocessor">#include</span> <span class="string">&lt;iostream&gt;</span>
+<span class="preprocessor">#include</span> <span class="string">&lt;string&gt;</span>
 
-    <span class="keyword">def</span> <span class="function">greet</span>(<span class="variable">self</span>):
-        <span class="comment"># Вывод приветствия</span>
-        <span class="keyword">print</span>(<span class="string">f"Привет, </span><span class="variable">{self.name}</span><span class="string">! Добро пожаловать в Python."</span>)
+<span class="keyword">class</span> <span class="class-name">Greeter</span> {
+<span class="keyword">private</span>:
+    <span class="type">std::string</span> <span class="variable">name</span>;
 
-<span class="comment"># Создание экземпляра класса</span>
-<span class="variable">my_greeter</span> = <span class="class-name">Greeter</span>(<span class="string">"Разработчик"</span>)
-<span class="variable">my_greeter</span>.<span class="function">greet</span>()</code></pre>
+<span class="keyword">public</span>:
+    <span class="function">Greeter</span>(<span class="type">std::string</span> <span class="variable">n</span>) : <span class="variable">name</span>(<span class="variable">n</span>) {}
+
+    <span class="type">void</span> <span class="function">greet</span>() <span class="keyword">const</span> {
+        <span class="comment">// Вывод приветствия в консоль</span>
+        <span class="type">std::cout</span> &lt;&lt; <span class="string">"Привет, "</span> &lt;&lt; <span class="variable">name</span> 
+                  &lt;&lt; <span class="string">"! Добро пожаловать в C++."</span> 
+                  &lt;&lt; <span class="type">std::endl</span>;
+    }
+};
+
+<span class="comment">// Точка входа в программу</span>
+<span class="type">int</span> <span class="function">main</span>() {
+    <span class="class-name">Greeter</span> <span class="variable">myGreeter</span>(<span class="string">"Разработчик"</span>);
+    <span class="variable">myGreeter</span>.<span class="function">greet</span>();
+    <span class="keyword">return</span> <span class="number">0</span>;
+}</code></pre>
     </section>
 </main>
 
@@ -125,7 +142,7 @@
         </div>
         <div>
             <h3>Свойства CSS (40+)</h3>
-            <p><code>font-family</code>, <code>font-size</code>, <code>font-weight</code>, <code>font-style</code>, <code>color</code>, <code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-size</code>, <code>margin</code>, <code>padding</code>, <code>text-align</code>, <code>text-decoration</code>, <code>text-transform</code>, <code>letter-spacing</code>, <code>line-height</code>, <code>border</code>, <code>border-collapse</code>, <code>border-radius</code>, <code>width</code>, <code>height</code>, <code>max-width</code>, <code>min-height</code>, <code>float</code>, <code>clear</code>, <code>display</code>, <code>position</code>, <code>top</code>, <code>left</code>, <code>z-index</code>, <code>list-style-type</code>, <code>list-style-image</code>, <code>box-shadow</code>, <code>overflow</code>, <code>white-space</code>, <code>overflow-wrap</code>, <code>vertical-align</code>, <code>opacity</code>, <code>transition</code>, <code>cursor</code>, <code>outline</code>, <code>box-sizing</code>, <code>src</code> (в @font-face)</p>
+            <p><code>font-family</code>, <code>font-size</code>, <code>font-weight</code>, <code>font-style</code>, <code>color</code>, <code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-size</code>, <code>margin</code>, <code>padding</code>, <code>text-align</code>, <code>text-decoration</code>, <code>text-transform</code>, <code>letter-spacing</code>, <code>line-height</code>, <code>border</code>, <code>border-collapse</code>, <code>border-radius</code>, <code>width</code>, <code>height</code>, <code>max-width</code>, <code>min-height</code>, <code>float</code>, <code>clear</code>, <code>display</code>, <code>position</code>, <code>top</code>, <code>left</code>, <code>z-index</code>, <code>list-style-type</code>, <code>list-style-image</code>, <code>box-shadow</code>, <code>overflow</code>, <code>white-space</code>, <code>overflow-wrap</code>, <code>vertical-align</code>, <code>opacity</code>, <code>transition</code>, <code>cursor</code>, <code>outline</code>, <code>box-sizing</code>, <code>src</code></p>
         </div>
     </div>
 </footer>
