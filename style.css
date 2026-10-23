@@ -1,0 +1,258 @@
+/* Подключение локального шрифта для заголовков */
+@font-face {
+    font-family: 'LocalHeadingFont';
+    src: url('fonts/roboto-bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Базовые настройки размера шрифта (критерий 6) */
+body {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Критерий 6 и 7: Заголовки с нестандартным локальным шрифтом */
+h1, h2, h3 {
+    font-family: 'LocalHeadingFont', 'Arial Black', sans-serif;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 18px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #2980b9;
+}
+
+/* Навигация и якорные ссылки (критерий 2 и 8) */
+nav {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+nav a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+nav a:hover {
+    color: #e74c3c;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Критерий 3: Изображения с различным выравниванием и обтеканием */
+.float-left {
+    float: left;
+    margin: 0 20px 15px 0;
+    width: 200px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 15px 20px;
+    width: 180px;
+}
+
+.center-block {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    clear: both;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 12px;
+    font-style: italic;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+}
+
+/* Критерий 4: Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e8f4f8;
+    transition: background-color 0.2s ease;
+}
+
+/* Критерий 5: Списки */
+ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.standard-list {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.image-list {
+    list-style-image: url('images/marker.png');
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Критерий 10: Подсветка кода (стиль Monokai) */
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 13px;
+    line-height: 1.4;
+    border-left: 4px solid #f92672;
+}
+
+code {
+    font-family: inherit;
+}
+
+.keyword { color: #f92672; font-weight: bold; }
+.class-name { color: #a6e22e; }
+.function { color: #66d9ef; }
+.variable { color: #fd971f; }
+.string { color: #e6db74; }
+.comment { color: #75715e; font-style: italic; }
+
+/* Футер */
+footer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 8px;
+}
+
+footer h2 {
+    color: #ecf0f1;
+    border-bottom-color: #7f8c8d;
+}
+
+footer h3 {
+    color: #3498db;
+    font-size: 16px;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-columns > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 1.8;
+    word-wrap: break-word;
+}
+
+footer code {
+    background-color: #34495e;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #f1c40f;
+}
+
+/* Очистка обтекания */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
