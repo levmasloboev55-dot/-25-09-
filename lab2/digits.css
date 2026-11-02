@@ -1,0 +1,14 @@
+/* Только Flexbox и один цвет. Размер блока одинаков для обеих цифр.
+   Размер body по умолчанию учитывается без запрещённых margin/padding. */
+.screen {
+  display: flex;
+  width: calc(100vw - 16px);
+  height: calc(100vh - 16px);
+  align-items: center;
+  justify-content: center;
+}
+.digits { display: flex; gap: 24px; }
+.digit { display: flex; flex-direction: column; }
+.digit-row { display: flex; }
+.block { width: 32px; height: 32px; flex-shrink: 0; }
+.ink { background-color: #222; }
